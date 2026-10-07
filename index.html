@@ -10,7 +10,7 @@
 <meta property="og:description" content="Premium, fast websites for businesses in Kerala.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aadhilaseem.github.io/">
-<meta property="og:image" content="https://aadhilaseem.github.io/images/dekay.jpg">
+<meta property="og:image" content="https://aadhilaseem.github.io/images/kaswa.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://aadhilaseem.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
     -webkit-font-smoothing: antialiased; overflow-x: hidden;
   }
   ::selection { background: var(--gold); color: #000; }
-  img { display: block; max-width: 100%; height: auto; }
+  img, video { display: block; max-width: 100%; height: auto; }
   a { color: inherit; text-decoration: none; }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
   .wide { font-variation-settings: "wdth" 125; }
@@ -95,7 +95,7 @@
   .phones { padding: 0 0 170px; }
   .phones-row { display: flex; justify-content: center; gap: 48px; align-items: flex-end; }
   .device { width: 300px; border-radius: 46px; padding: 10px; background: #1d1d1f; box-shadow: inset 0 0 0 1px #3a3a3c, 0 40px 80px -30px rgba(212,180,131,.18); }
-  .device img { border-radius: 37px; }
+  .device img, .device video { border-radius: 37px; }
   .device.lift { transform: translateY(-60px); }
   .phones .cap { text-align: center; margin-top: 56px; }
   .phones .cap h3 { font-size: clamp(28px, 3.4vw, 44px); font-weight: 700; letter-spacing: -.02em; font-variation-settings: "wdth" 110; line-height: 1.05; }
@@ -115,8 +115,8 @@
   .case-top .right { max-width: 420px; }
   .case-top .right p { color: #d2d2d7; margin-bottom: 16px; }
   .case-img { display: block; margin: 0 56px; border-radius: 14px 14px 0 0; overflow: hidden; }
-  .case-img img { transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
-  .case:hover .case-img img { transform: scale(1.025); }
+  .case-img img, .case-img video { transition: transform 1.2s cubic-bezier(.2,.7,.2,1); }
+  .case:hover .case-img img, .case:hover .case-img video { transform: scale(1.025); }
 
   /* Services */
   .services { padding: 0 0 160px; }
@@ -190,7 +190,7 @@
     .phones { padding-bottom: 110px; }
     .phones-row { gap: 14px; }
     .device { width: 46%; border-radius: 28px; padding: 6px; }
-    .device img { border-radius: 23px; }
+    .device img, .device video { border-radius: 23px; }
     .device.lift { transform: translateY(-30px); }
     .title { margin-bottom: 40px; }
     .work, .services, .process { padding-bottom: 100px; }
@@ -238,8 +238,8 @@
 
   <section class="showcase">
     <div class="wrap">
-      <div class="frame" id="grow"><img src="images/dekay.jpg" alt="The DEKAY website, designed and built by Aadhil" width="1440" height="900"></div>
-      <p class="cap muted rv">DEKAY · Detergent &amp; soap, Cherthala · Redesign concept</p>
+      <div class="frame" id="grow"><video src="videos/kaswa.mp4" poster="videos/kaswa.jpg" width="1280" height="800" muted loop playsinline preload="metadata" aria-label="Video: scrolling through the Kaswa Perfume website"></video></div>
+      <p class="cap muted rv">Kaswa · Perfume · My own brand</p>
     </div>
   </section>
 
@@ -252,8 +252,8 @@
   <section class="phones">
     <div class="wrap">
       <div class="phones-row">
-        <div class="device rv"><img src="images/cocoroots-phone.jpg" alt="Coco Roots website on a phone" width="390" height="844" loading="lazy"></div>
-        <div class="device lift rv"><img src="images/dekay-phone.jpg" alt="DEKAY website on a phone" width="390" height="844" loading="lazy"></div>
+        <div class="device rv"><video src="videos/dekay-phone.mp4" poster="videos/dekay-phone.jpg" width="390" height="844" muted loop playsinline preload="none" aria-label="Video: the DEKAY website on a phone"></video></div>
+        <div class="device lift rv"><video src="videos/kaswa-phone.mp4" poster="videos/kaswa-phone.jpg" width="390" height="844" muted loop playsinline preload="none" aria-label="Video: the Kaswa Perfume website on a phone"></video></div>
       </div>
       <div class="cap rv">
         <h3>Made for the phone<br>in their hand.</h3>
@@ -279,7 +279,7 @@
           </div>
         </div>
         <a class="case-img" href="https://aadhilaseem.github.io/kaswa-perfume/" target="_blank" rel="noopener" aria-label="Open the Kaswa Perfume website">
-          <img src="images/kaswa.jpg" alt="Kaswa Perfume website home page" width="1440" height="900" loading="lazy">
+          <video src="videos/kaswa.mp4" poster="videos/kaswa.jpg" width="1280" height="800" muted loop playsinline preload="none" aria-label="Video: scrolling through the Kaswa Perfume website"></video>
         </a>
       </article>
 
@@ -295,7 +295,7 @@
           </div>
         </div>
         <a class="case-img" href="https://aadhilaseem.github.io/cm-detergent-website/" target="_blank" rel="noopener" aria-label="Open the DEKAY website">
-          <img src="images/dekay.jpg" alt="DEKAY by C.M. Detergent website home page" width="1440" height="900" loading="lazy">
+          <video src="videos/dekay.mp4" poster="videos/dekay.jpg" width="1280" height="800" muted loop playsinline preload="none" aria-label="Video: scrolling through the DEKAY website"></video>
         </a>
       </article>
 
@@ -311,7 +311,7 @@
           </div>
         </div>
         <a class="case-img" href="https://aadhilaseem.github.io/cocoroots-website/" target="_blank" rel="noopener" aria-label="Open the Coco Roots website">
-          <img src="images/cocoroots.jpg" alt="Coco Roots website home page" width="1440" height="900" loading="lazy">
+          <video src="videos/cocoroots.mp4" poster="videos/cocoroots.jpg" width="1280" height="800" muted loop playsinline preload="none" aria-label="Video: scrolling through the Coco Roots website"></video>
         </a>
       </article>
 
@@ -340,7 +340,7 @@
           </div>
         </div>
         <a class="case-img" href="https://aadhilaseem.github.io/Bismi-Constructions-/" target="_blank" rel="noopener" aria-label="Open the Bismi Constructions website">
-          <img src="images/bismi.jpg" alt="Bismi Constructions website home page" width="1440" height="900" loading="lazy">
+          <video src="videos/bismi.mp4" poster="videos/bismi.jpg" width="1280" height="800" muted loop playsinline preload="none" aria-label="Video: scrolling through the Bismi Constructions website"></video>
         </a>
       </article>
     </div>
@@ -446,6 +446,13 @@
     const lit = Math.round(q * words.length);
     words.forEach((w, i) => w.classList.toggle('on', i < lit));
   }
+  // Site videos play only while on screen (saves data and battery)
+  const vio = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting && !still) e.target.play().catch(() => {});
+    else e.target.pause();
+  }), { threshold: .25 });
+  document.querySelectorAll('video').forEach(v => vio.observe(v));
+
   addEventListener('scroll', onScroll, { passive: true });
   addEventListener('resize', onScroll);
   onScroll();
